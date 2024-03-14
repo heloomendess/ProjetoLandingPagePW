@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Banco Hepe</title>
+</head>
+
+<body>
+
+    <div class="flutter">
+        <a href="https://www.instagram.com/_lipefl?igsh=MXBxb3plamJ2N291cQ==" class="linkflutter">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/filipe-de-oliveira-3487951a6/" class="linkflutter">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://github.com/SkylipeBR2" class="linkflutter">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+    </div>
+
+    <main class="banner">
+        <!-- Menu -->
+        <header>
+            <nav>
+                <a href="" id="logo"><img src="assets/Image/logo.svg" alt="logo" id="img_logo"></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Emprestimo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Investimento</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="loginUser">Login<ion-icon name="exit-outline" id="iconEntrar"></ion-icon></a>
+                    </li>
+                </ul>   
+            </nav>
+        </header>
+        
+        <!-- Aqui irá vim todo o conteudo do CTA-->
+        <div class="content">
+            <div class="contentIlustra">
+                <img src="./assets/Image/imagem.png" id="imagemIlus">
+            </div>
+            <div class="contentText">
+                <h1 id="tituloPrincipal">HEPE</h1>
+                <p id="descricao">O banco digital que é a sua cara!</p>
+                <!-- <button onclick="topFunction()" id="mybtn">Teste</button> -->
+                <a href="#FlexContainer" id="CTA">CONFERIR!</a>
+            </div>
+        </div>
+        
+        <div class="contentSecao">
+            <h1 id="tituloSecao">Seção Teste</h1>
+                <div class="FlexContainer" id="FlexContainer">
+                    <div class="blocoEmprestimo">
+                        <div class="cardFotos">
+                            <div class="fotoHeloisa">
+                                <img src="assets/Image/foto_helo.png" alt="" class="img_perfil">
+                                <h2>Heloisa</h2>
+                            </div>
+                            <div class="iconMais">
+                                <img src="assets/Image/mais.png" alt="">
+                            </div>
+                            <div class="fotoFilipe">
+                                <img src="assets/Image/foto_lipe.png" alt="" class="img_perfil">
+                                <h2>Filipe</h1>
+                            </div>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text
+                            of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s.
+                            Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s </p>
+                    </div>
+                    <div class="blocoInvestimento">
+                        <h2 id="principal2">Titulo da História</h2>
+                        <p id="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
+                         maxime ut veniam repellat sed aliquid, itaque quasi sequi enim dolorem expedita,
+                         temporibus suscipit at? Quos, provident. </br> </br>
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 
+                         1500s. Lorem Ipsum has been the industry's standard dummy text ever since
+                         the 1500s.
+                        </p>
+                         <a href="#" id="CTA">Saiba Mais!</a>
+                   </div>
+                </div>
+        </div>
+    </main>
+
+    <!-- Seção para beneficios -->
+    <div class="secaoBeneficios">
+        <h1>Benefícios</h1>
+        <div class="cardsBeneficios">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+
+    <div class="secaoOrcamento">
+    <section id="secao-orcamento">
+        <h2>Faça um orçamento</h2>
+        <form action="">
+
+            <div class="campo linha">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="qtdDePaginas">Quantidade de páginas</label>
+                <input type="number" id="qtdDePaginas">
+            </div>
+
+            <div>
+                <label for="tipoDeSite">Tipo de site</label>
+                <select name="tipoDeSite" id="tipoDeSite">
+                    <option disabled selected></option>
+                    <option value="1">Estático</option>
+                    <option value="2">Dinamico</option>
+                </select>
+            </div>
+                
+            <div class="campo linha"> 
+                <label for="prototipo">Precisa de protótipo?</label>
+                <div>
+                <input name="prototipo" type="radio" id="prototipo_sim">
+                <label for="prototipo_sim">Sim, preciso.</label>
+                <input name="prototipo" type="radio" id="protitipo_nao">
+                <label for="prototipo_nao">Não preciso.</label>
+            </div>
+            </div>
+
+            <div class="linha">
+                <input type="checkbox" id="js">
+                <label for="js">Tem automação com JS?</label>
+            </div>
+            
+            <div class="campo linha">
+                <label for="prazo">Prazo</label>
+                <input type="range" name="prazo" id="prazo" min="1" max="12">
+            </div>
+            
+        </form>
+    </section>
+    </div>
+</body>
+</html>
